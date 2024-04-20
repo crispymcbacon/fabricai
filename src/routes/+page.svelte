@@ -405,7 +405,7 @@
 		Fabric<span class="text-primary-500">ai</span>
 	</div>
 	<div class="mt-2 px-8 text-gray-500">
-		Helps fashion designer to visualize their ideas (really?)
+		Helps fashion designer to visualize their ideas
 	</div>
 
 	<!-- Prompting-->
