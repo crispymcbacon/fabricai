@@ -3,7 +3,7 @@
     import { activeWordSelector } from '$lib/activeWordSelector'; // import the store
 
     export let word;
-    let words = ['skirt', 'dress'].filter(w => w !== word); // filter out the word
+    let words = ['skirt', 'dress', 'white', 'elegant'].filter(w => w !== word); // filter out the word
     words.unshift(word); // add word as the first element
     let showDropdown = false;
     let id = Math.random(); // generate a unique id for each WordSelector

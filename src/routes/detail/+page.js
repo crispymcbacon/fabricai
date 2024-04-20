@@ -409,9 +409,9 @@ export async function load({ params, url }) {
 		let title;
 
 		let title_prompt =
-			"Given the following description: '" +
+			"Given the following description, give me a short title for the described fashion object: '" +
 			description +
-			"', give me a short title for the described fashion object\n.";
+			"'\n.";
 		//let generated_sketch_url;
 
 		description = await openai.chat.completions.create({
