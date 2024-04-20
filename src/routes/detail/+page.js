@@ -407,17 +407,17 @@ export async function load({ params, url }) {
 		let materials;
 		let patterns;
 		let title;
-
-		let title_prompt =
-			"Given the following description, give me a short title for the described fashion object: '" +
-			description +
-			"'\n.";
-		//let generated_sketch_url;
-
+		
 		description = await openai.chat.completions.create({
 			messages: [{ role: 'system', content: prompt_description }],
 			model: 'gpt-3.5-turbo'
 		});
+
+		let title_prompt =
+			"Give me a short title for the described fashion element, maximum three words: \n\n'" +
+			description +
+			"'\n.";
+		//let generated_sketch_url;
 
 		materials = await openai.chat.completions.create({
 			messages: [{ role: 'system', content: prompt_materials }],
